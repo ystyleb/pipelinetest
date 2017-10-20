@@ -5,9 +5,6 @@ pipeline {
       parallel {
         stage('1') {
           steps {
-            sh '''mvn clean
-mvn compile
-'''
             echo 'building'
           }
         }
